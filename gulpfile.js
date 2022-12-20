@@ -10,7 +10,7 @@ const clean = () => {
    return del(['dist'])
 }
  
-const resources = () => {
+const fonts = () => {
    return src('src/fonts/**')
    .pipe(dest('dist/fonts'))
 }
@@ -67,7 +67,7 @@ watch('src/**/*.html', htmlmin);
 watch('src/styles/*.sass', styles);
 // watch('src/js/**/*.js', jsugly);
 watch('src/img/svg/*.svg', svgSprites);
-watch('src/fonts/**', resources);
+watch('src/fonts/**', fonts);
 watch([
    'src/img/**/*.jpg',
    'src/img/**/*.jpeg',
@@ -79,5 +79,5 @@ exports.styles = styles;
 exports.htmlmin = htmlmin;
 exports.clean = clean;
 
-exports.default = series(clean, resources, htmlmin, styles, svgSprites, images, watchFiles)
+exports.default = series(clean, fonts, htmlmin, styles, svgSprites, images, watchFiles)
 
