@@ -1,0 +1,731 @@
+@import "../../node_modules/normalize.css/normalize"
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Murecho:wght@500&display=swap')
+
+
+$text-primary: rgba(242, 242, 242, 1)
+$text-secondary: rgba(171, 171, 171, 1)
+$optional: rgba(73, 127, 235, 1)
+$main-font: 20px
+$header-font: 28px
+
+@font-face 
+  font-family: 'Muller'
+  src: local('Muller Medium')
+  src: url('../fonts/muller/MullerMedium.woff2') format('woff2')
+  src: url('../fonts/muller/MullerMedium.woff') format('woff')
+  font-display: swap
+  font-weight: 500
+  font-style: normal
+
+html  
+   box-sizing: border-box
+   max-width: 100%
+
+*, *::after, *::before
+   box-sizing: inherit
+
+body
+   font-family: 'Montserrat', sans-serif
+   background: #111010
+   color: $text-primary
+   max-width: 100%
+   font-size: 20px
+   line-height: 140%
+
+button
+   background: none
+   border: none
+   outline: none
+   color: $text-primary
+   cursor: pointer
+   color: inherit
+   padding: 0
+   margin: 0
+
+a
+   text-decoration: none
+   outline: none
+   color: inherit
+
+h1, h2, h3, h4, p, ul
+   margin: 0
+   padding: 0
+
+// .section__header
+//    font-weight: 700
+//    font-size: 28px
+
+.murecho
+   font-family: 'Murecho', sans-serif
+
+.muller
+   font-family: 'Muller', sans-serif
+
+
+.green_btn
+   background: linear-gradient(89.49deg, #1B9359 -15.91%, #11874E -15.9%, #1ABA6D 103.08%)
+
+.green_btn:hover
+   background: linear-gradient(269.07deg, #1CD37B 2.7%, #09663A 101.35%)
+   
+.green_btn:active
+   background: linear-gradient(269.07deg, #1CD37B 2.7%, #1BA060 101.35%)
+
+.opacity-effect
+   transition: opacity 0.3s linear
+
+.opacity-effect:hover
+   background: #636363
+
+.opacity-effect:active
+   background: #8A8A8A
+
+
+
+.container-full
+   display: flex
+   justify-content: flex-start
+   align-items: stretch
+   width: 100%
+   max-width: 100%
+
+.sidebar
+   background: rgba(28, 26, 26, 0.7)
+   backdrop-filter: blur(10px)
+   -webkit-backdrop-filter: blur(10px)
+   padding: 64px 24px
+
+.sidebar__container
+   // position: sticky 
+   // top: 32px
+   display: flex 
+   flex-direction: column
+
+.menu__profile
+   margin-bottom: 64px
+
+.menu__profile__img
+   border-radius: 50%
+   width: 54px
+   height: 54px
+
+.nav
+   display: flex 
+   flex-direction: column
+   align-items: center
+
+.nav__group
+   display: flex
+   flex-direction: column
+   margin-bottom: 64px
+
+.nav__link
+   width: 36px
+   height: 36px
+   background: #2F2B32
+   border-radius: 40px
+   display: flex
+   justify-content: center
+   align-items: center
+   margin-bottom: 32px
+   transition: opacity 0.3s linear
+   svg
+      max-width: 100%
+      max-height: 100%
+
+.nav__link:hover
+   background: #636363
+
+.nav__link:active
+   background: #8A8A8A
+
+.nav__link:last-child
+   margin-bottom: 0
+
+.nav__link8
+   padding: 8px
+
+.nav__link9
+   padding: 9px
+
+.nav__link9h
+   padding: 9.5px 9px
+
+.nav__link10-8
+   padding: 10px 8px
+
+.nav__link10-9
+   padding: 10px 9px
+
+.nav__link11-10
+   padding: 11.5px 10px
+
+   
+
+.nav__link-avatar
+   margin-bottom: 64px
+   
+
+.main
+   width: calc(100% - 102px)
+
+.container
+   width: 1050px
+   padding: 60px 31.5px 93px 31.5px
+   max-width: 100%
+   margin: 0 auto
+
+.profile__menu
+   display: none
+
+.profile__menu__about
+   display: none
+
+.back_link
+   color: $optional
+   font-weight: 700
+   font-size: $header-font
+   line-height: 140%
+   margin-bottom: 64px
+   display: inline-flex
+   align-items: center
+   svg
+      width: 20px
+      height: 20px
+      margin-right: 16px
+   
+.back_link:hover
+   color: #589EFD
+   path
+      fill: #589EFD
+.back_link:active
+   color: #97C6FF
+   path
+      fill: #97C6FF
+
+.profile
+   margin-bottom: 64px
+
+.profile__main
+   display: flex
+   margin-bottom: 32px
+
+.profile__picture
+   margin-right: 32px
+   width: 307px
+   flex-shrink: 0
+   position: relative
+
+.profile__img
+      width: 100%
+      height: 415px
+      object-fit: cover
+
+.profile__picture::after
+   content: ''
+   position: absolute
+   width: 100%
+   height: 100%
+   top: 0
+   left: 0
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.38%, rgba(0, 0, 0, 0.268) 79.69%, rgba(0, 0, 0, 0.4) 100%)
+
+.profile__header
+   margin-bottom: 20px
+   font-size: $header-font
+   line-height: 140%
+   font-weight: 700
+
+.profile__name
+   margin-bottom: 32px
+   color: $text-secondary
+   font-size: 16px
+   line-height: 140%
+
+.profile__nickname
+   display: none
+
+// .profile__desc
+//    font-weight: 500
+//    font-size: 20px
+//    line-height: 140%
+
+.profile__desc_mob
+   display: none
+
+.profile__desc__text
+   display: inline
+   line-height: 140%
+
+.profile__desc__min
+   color: $optional
+
+.profile__desc__min:hover
+   color: #589EFD
+.profile__desc__min:active
+   color: #97C6FF
+
+.profile__action
+   display: flex
+
+.profile__subscribe
+   display: flex
+   align-items: center
+   padding: 12px 32px
+   border-radius: 30px
+   margin-right: 40px
+   font-weight: 700
+   font-size: 20px
+   line-height: 140%
+   white-space: nowrap
+   svg   
+      width: 16px
+      height: 20px
+      margin-right: 16px
+
+.profile__share
+   border-radius: 50%
+   width: 54px
+   height: 54px
+   font-weight: 700
+   font-size: 20px
+   line-height: 140%
+   display: flex
+   justify-content: center
+   align-items: center
+   svg
+      width: 18px
+      height: 18px
+
+.userfeed__header
+   margin-bottom: 64px
+   font-weight: 700
+   font-size: $header-font
+   line-height: 140%
+   color: $text-secondary
+
+.userfeed__grid
+   display: grid
+   grid-template-columns: 1fr 1fr 1fr
+   grid-column-gap: 30px
+   grid-row-gap: 16px
+   
+.userfeed__card
+   height: 290px
+
+.userfeed__card__head
+   display: none
+
+.userfeed__link
+   width: 100%
+   height: 100%
+   display: block
+
+.userfeed__img
+   width: 100%
+   height: 100%
+   object-fit: cover
+
+.userfeed__action
+   display: none
+
+.userfeed__desc
+   display: none
+
+.blurwindow
+   display: flex
+   justify-content: center
+   align-items: stretch
+   position: fixed
+   overflow-y: scroll
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   backdrop-filter: blur(10px)
+   -webkit-backdrop-filter: blur(10px)
+   background: rgba(28, 26, 26, 0.7)
+   padding: 123px
+   pointer-events: none
+   opacity: 0
+   transition: opacity 0.5s
+   .userfeed__link
+      padding-bottom: 20px
+      display: block
+      width: auto
+      height: auto
+   .userfeed__card
+      width: 608px
+      height: auto
+      flex-shrink: 0
+   .userfeed__action
+      display: block
+   .profile__desc_mob
+      display: block
+   .userfeed__card__head
+      display: flex
+   .userfeed__img
+      height: 558px
+      margin-bottom: 24px
+
+.blurwindow-active
+   opacity: 1
+   pointer-events: all
+
+   .blurwindow__btn
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-basis: 100%
+      svg
+         width: 32px
+         height: 32px
+
+   .blurwindow__next
+      svg
+         transform: scale(-1, 1)
+
+.userfeed__action
+   display: none
+   margin-bottom: 24px
+
+.userfeed__action__like
+   margin-right: 32px
+   svg
+      width: 40px
+      height: 36px
+
+.userfeed__action__share
+   svg
+      width: 36px
+      height: 36px
+
+.profile__desc__text
+   p
+      margin-bottom: 4px
+
+.userfeed__card__head
+   display: none
+   align-items: center
+   margin-bottom: 24px
+
+.userfeed__card__head__img
+   width: 80px
+   height: 80px
+   border-radius: 50%
+   margin-right: 14px
+
+.userfeed__card__name
+   display: flex
+   flex-direction: column
+
+.userfeed__card__fullname
+   font-weight: 700
+   line-height: 140%
+   margin-bottom: 8px
+
+.userfeed__card__nick
+   font-weight: 500
+   line-height: 23px
+   color: $text-secondary
+
+.userfeed__card__more
+   margin-left: auto
+   display: flex
+   flex-direction: column
+   align-items: flex-end
+   flex-shrink: 0
+
+.userfeed__card__more__link
+   margin-bottom: 19px
+   svg
+      width: 16px
+      height: 16px
+
+.userfeed__card__visit
+   font-weight: 500
+   line-height: 140%
+   color: $text-secondary
+
+
+
+@media (max-width: 768px) 
+   .userfeed__action
+      display: flex
+
+   .userfeed__link
+      display: block
+      width: auto
+      height: auto
+
+   .userfeed__img
+      margin-bottom: 24px
+
+   .userfeed__card__head
+      display: flex
+   
+   body
+      font-size: 16px
+   
+   .main
+      width: 100%
+
+   .sidebar
+      display: none
+
+   .container
+      padding: 0
+
+   .profile__main
+      position: relative
+
+   .back_link
+      display: none
+
+   .profile
+      margin-bottom: 40px
+
+   .profile__menu
+      position: absolute
+      top: 0
+      left: 0
+      padding: 44px 32px
+      z-index: 2
+      width: 100%
+      display: flex
+      // justify-content: space-between
+
+   .profile__info
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      padding: 32px
+
+   .profile__desc
+      display: none
+
+   .profile__picture
+      width: 100%
+      height: 530px
+      margin-right: 0
+
+   .profile__img
+      height: 100%
+      object-fit: cover
+
+   .profile__menu_back
+      svg
+         width: 20px
+         height: 20px
+
+   .profile__menu_more
+      margin-left: auto
+      svg
+         width: 16px
+         height: 16px
+
+   .profile__action
+      padding: 0 31.5px
+
+   .profile__header
+      font-size: 18px
+      margin-bottom: 8px
+      padding-right: 22px
+      position: relative
+      display: inline-block
+   
+   .profile__header::after
+      content: ''
+      background: url('../img/validate.svg')
+      width: 14px
+      height: 14px
+      position: absolute
+      right: 0
+      top: calc( 50% - 7px )
+
+
+   .profile__name
+      font-size: 16px
+      margin-bottom: 0
+
+   .profile__action
+      margin-bottom: 40px
+
+   .profile__subscribe
+      font-size: 16px
+      padding: 8px 32px
+      margin-right: 32px
+      svg
+         width: 16px
+         height: 16px
+         margin-right: 10px
+
+   .profile__share
+      flex-shrink: 0
+      width: 36px
+      height: 36px
+      svg
+         width: 14px
+         height: 11px 
+
+   .profile
+      .profile__desc_mob
+         padding: 0 31.5px
+
+   .profile__desc_mob
+      display: block
+      font-weight: 500
+      // font-size: 16px
+      line-height: 140%
+
+   .userfeed
+      width: 100%
+      padding: 0 31.5px
+
+   .userfeed__header
+      font-size: 20px
+      margin-bottom: 40px
+      
+   .userfeed__grid
+      display: flex
+      flex-direction: column
+
+   .userfeed__card
+      height: auto
+      margin-bottom: 40px
+
+
+
+   
+
+@media (max-width: 440px)
+
+   body
+      font-size: 12px
+
+   .profile__main
+      margin-bottom: 20px
+
+   .profile__menu
+      align-items: center
+      padding: 16px 21px
+
+   .profile__menu_back
+      margin-right: 16px
+      
+
+
+   .profile__menu__about
+      display: flex
+      flex-direction: column
+      line-height: 16px
+
+   .profile__menu__name
+      margin-bottom: 4px
+      line-height: 140%
+
+   .profile__picture
+      height: 198px
+
+   .profile__header
+      margin-bottom: 0
+      font-size: 14px
+
+   .profile__name
+      display: none
+
+   .profile__info
+      padding: 16px 20px
+
+   .profile__nickname
+      display: block
+      font-weight: 500
+      font-size: 12px
+      line-height: 17px
+      color: #B19F9F
+      font-family: "Murecho"
+
+   .profile__action
+      padding: 0 20.5px
+      justify-content: space-between
+      margin-bottom: 20px
+
+   .profile__subscribe
+      font-size: 12px
+      margin-right: 16px
+      padding: 5.5px 12px
+      svg
+         margin-right: 6px
+
+   .profile__share
+      padding: 9.91px 9px
+      svg
+         width: 10px
+         height: 8px
+
+
+   .profile__desc_mob
+      font-size: 12px
+
+   .profile
+      margin-bottom: 20px
+   
+   .profile
+      .profile__desc_mob
+         padding: 18px 24px 
+
+   .userfeed
+      padding: 0
+
+   .userfeed__header
+      display: none
+
+   .userfeed__card__head
+      padding: 0 17px 0 20px
+      margin-bottom: 12px
+
+   .userfeed__card__head__img
+      width: 42px
+      height: 42px
+      margin-right: 16px
+
+   .userfeed__card__fullname
+      font-size: 12px
+      margin-bottom: 2px
+
+   .userfeed__card__nick
+      font-size: 12px
+      line-height: 17px
+
+   .userfeed__card__more__link
+      margin-bottom: 0
+   
+   .userfeed__card__visit
+      font-size: 12px
+
+   .userfeed__img
+      margin-bottom: 12px
+
+   .userfeed__action, .profile__desc_mob
+      padding: 0 6px 0 20px
+
+   .userfeed__action
+      margin-bottom: 12px
+      
+
+   .userfeed__action__like 
+      margin-right: 12.43px
+      svg
+         width: 17.14px
+         height: 15.93px
+      
+   .userfeed__action__share
+      svg
+         width: 16px 
+         height: 16px
+
+
+   
+   
+   

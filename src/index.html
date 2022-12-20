@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Talala</title>
+   <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+   <!-- <object type="image/svg+xml" data="img/sprite.svg" style="display: none;">
+      Нет поддержки svg
+   </object> -->
+
+
+   <div class="container-full">
+      <div class="sidebar">
+         <div class="sidebar__container">
+
+            <a href="/" class="menu__profile">
+               <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="Изображение профиля"
+                  class="menu__profile__img">
+            </a>
+
+            <nav class="nav">
+               <a href="" class="nav__link nav__link8 nav__link-avatar">
+                  <svg class="navicon">
+                     <use xlink:href="img/sprite.svg#avatar"></use>
+                  </svg>
+               </a>
+
+               <div class="nav__group">
+                  <a href="" class="nav__link nav__link10-8">
+                     <svg class="navicon">
+                        <use xlink:href="img/sprite.svg#card"></use>
+                     </svg>
+                  </a>
+                  <a href="" class="nav__link nav__link10-9">
+                     <svg class="navicon">
+                        <use xlink:href="img/sprite.svg#saved"></use>
+                     </svg>
+                  </a>
+                  <a href="" class="nav__link nav__link11-10">
+                     <svg class="navicon">
+                        <use xlink:href="img/sprite.svg#cash"></use>
+                     </svg>
+                  </a>
+               </div>
+
+               <div class="nav__group">
+                  <a href="" class="nav__link nav__link9h">
+                     <svg class="navicon">
+                        <use xlink:href="img/sprite.svg#shareright"></use>
+                     </svg>
+                  </a>
+                  <a href="" class="nav__link nav__link9h">
+                     <svg class="navicon">
+                        <use xlink:href="img/sprite.svg#sun"></use>
+                     </svg>
+                  </a>
+                  <a href="" class="nav__link nav__link9">
+                     <svg class="navicon">
+                        <use xlink:href="img/sprite.svg#language"></use>
+                     </svg>
+                  </a>
+               </div>
+
+               <a href="" class="nav__link nav__link10-9">
+                  <svg class="navicon">
+                     <use xlink:href="img/sprite.svg#logout"></use>
+                  </svg>
+               </a>
+            </nav>
+         </div>
+      </div>
+
+      <main class="main">
+         <div class="container">
+
+            <section class="section profile">
+
+               <a href="" class="back_link">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M0 10.5C0 16.0226 4.4774 20.5 10 20.5C15.5226 20.5 20 16.0226 20 10.5C20 4.9774 15.5226 0.5 10 0.5C4.4774 0.5 0 4.9774 0 10.5ZM10.7692 6.64952L7.7125 9.73077H14.9038V11.2692H7.7125L10.7692 14.3505L9.67789 15.4341L4.78173 10.5L9.67789 5.56587L10.7692 6.64952Z"
+                        fill="#497FEB" />
+                  </svg>
+
+                  <span>
+                     Вернуться на главную
+                  </span>
+               </a>
+
+               <div class="profile__menu">
+                  <a href="" class="profile__menu__link profile__menu_back">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#backwhite"></use>
+                     </svg>
+                  </a>
+
+                  <div class="profile__menu__about">
+                     <div class="profile__menu__name">Иванов Иван</div>
+                     <div class="profile__menu__count"><span>9</span> Постов</div>
+                  </div>
+
+                  <a href="" class="profile__menu_link profile__menu_more">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#more"></use>
+                     </svg>
+                  </a>
+               </div>
+
+               <div class="profile__main">
+
+                  <picture class="profile__picture">
+                     <img src="img/feed/1/profilePhotoDesktop.jpg" srcset="img/feed/1/profilePhotoDesktop2x.jpg 2x"
+                        alt="фото профиля" class="profile__img">
+                  </picture>
+
+                  <div class="profile__info">
+                     <h2 class="profile__header">CheliksRandom</h2>
+
+                     <p class="profile__name">Иванов Иван</p>
+                     <p class="profile__nickname">
+                        <span>@</span><span>kakyto_chel</span>
+                     </p>
+
+
+                     <div class="profile__desc">
+                        <p class="profile__desc__text">
+                           Привет всем!
+                           Являясь всего лишь частью общей картины, действия представителей оппозиции лишь добавляют
+                           фракционных
+                           разногласий и объективно рассмотрены соответствующими инстанциями.&nbsp;
+                        </p>
+
+                        <button class="profile__desc__min">Свернуть</button>
+                     </div>
+
+                  </div>
+               </div>
+
+               <div class="profile__action">
+                  <button class="profile__subscribe green_btn">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#dollar"></use>
+                     </svg>
+                     <span>
+                        Оформить подписку за 59.99
+                     </span>
+                  </button>
+
+                  <button class="profile__share green_btn">
+                     <svg>
+                        <use xlink:href="img/sprite.svg#share"></use>
+                     </svg>
+                  </button>
+               </div>
+
+               <div class="profile__desc_mob">
+                  <p class="profile__desc__text">
+                     Привет всем!
+                     Являясь всего лишь частью общей картины, действия представителей оппозиции лишь добавляют
+                     фракционных
+                     разногласий и объективно рассмотрены соответствующими инстанциями.&nbsp;
+                  </p>
+
+                  <button class="profile__desc__min">Свернуть</button>
+               </div>
+
+            </section>
+
+            <section class="section userfeed">
+               <h2 class="userfeed__header">Лента пользователя</h2>
+
+
+
+               <div class="userfeed__grid">
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/1/profilePhotoDesktop.jpg"
+                           srcset="img/feed/1/profilePhotoDesktop2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/2/PhotoCardTablet.jpg"
+                           srcset="img/feed/2/PhotoCardTablet2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/3/PhotoCardTablet.jpg"
+                           srcset="img/feed/3/PhotoCardTablet2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/4/PhotoCardTablet.jpg"
+                           srcset="img/feed/4/PhotoCardTablet2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/5/PhotoCardTablet.jpg"
+                           srcset="img/feed/5/PhotoCardTablet2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/6/PhotoCardTablet.jpg"
+                           srcset="img/feed/6/PhotoCardTablet2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/7/PhotoCardTablet.jpg"
+                           srcset="img/feed/7/PhotoCardTablet2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/8/PhotoCardTablet.jpg"
+                           srcset="img/feed/8/PhotoCardTablet2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+                  <div class="userfeed__card">
+                     <div class="userfeed__card__head">
+                        <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост"
+                           class="userfeed__card__head__img">
+                        <div class="userfeed__card__name">
+                           <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+                           <a href="" class="userfeed__card__nick">
+                              <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+                           </a>
+                        </div>
+
+                        <div class="userfeed__card__more">
+                           <a href="" class="userfeed__card__more__link">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                                 <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                              </svg>
+                           </a>
+                           <p class="userfeed__card__visit">Вчера 21:05</p>
+                        </div>
+                     </div>
+                     <a href="" class="userfeed__link">
+                        <img class="userfeed__img" src="img/feed/1/profilePhotoDesktop.jpg"
+                           srcset="img/feed/1/profilePhotoDesktop2x.jpg 2x" alt="Фото ленты 1">
+                        <div class="userfeed__action">
+                           <button class="userfeed__action__like">
+                              <svg width="41" height="36" viewBox="0 0 41 36" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                                    fill="url(#paint0_linear_2_1305)" />
+                                 <defs>
+                                    <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729"
+                                       y2="35.8576" gradientUnits="userSpaceOnUse">
+                                       <stop stop-color="#F22E3E" />
+                                       <stop offset="1" stop-color="#B41212" />
+                                    </linearGradient>
+                                 </defs>
+                              </svg>
+                           </button>
+                           <button class="userfeed__action__share">
+                              <svg>
+                                 <use xlink:href="img/sprite.svg#shareright"></use>
+                              </svg>
+                           </button>
+                        </div>
+
+                        <div class="profile__desc_mob">
+
+                           <div class="profile__desc__text">
+                              <p>
+                                 Привет всем!
+                              </p>
+                              <p>
+                                 Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                                 добавляют
+                                 фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                              </p>
+                              <p>
+                                 Прежде всего, новая модель организационной деятельности представляет собой интересный
+                                 эксперимент проверки модели развития.
+                              </p>
+                              <p>
+                                 Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                                 собой интересный эксперимент проверки кластеризации усилий.
+                              </p>
+                           </div>
+
+                           <button class="profile__desc__min">
+                              <span>
+                                 Свернуть
+                              </span>
+                           </button>
+                        </div>
+
+                     </a>
+                  </div>
+
+            </section>
+         </div>
+      </main>
+   </div>
+
+
+   <div class="blurwindow">
+      <a href="" class="blurwindow__back blurwindow__btn">
+         <svg>
+            <use xlink:href="img/sprite.svg#arrow"></use>
+         </svg>
+      </a>
+      <div class="userfeed__card">
+         <div class="userfeed__card__head">
+            <img src="img/profile.jpg" srcset="img/profile2x.jpg" alt="пост" class="userfeed__card__head__img">
+            <div class="userfeed__card__name">
+               <a href="" class="userfeed__card__fullname">Чел с рандомным ником</a>
+               <a href="" class="userfeed__card__nick">
+                  <span class="murecho">@</span><span class="muller">kakoyto_chel</span>
+               </a>
+            </div>
+
+            <div class="userfeed__card__more">
+               <a href="" class="userfeed__card__more__link">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="2.5" cy="8" r="2" fill="#ABABAB" />
+                     <circle cx="8.5" cy="8" r="2" fill="#ABABAB" />
+                     <circle cx="14.5" cy="8" r="2" fill="#ABABAB" />
+                  </svg>
+               </a>
+               <p class="userfeed__card__visit">Вчера 21:05</p>
+            </div>
+         </div>
+         <a href="" class="userfeed__link">
+            <img class="userfeed__img" src="img/feed/1/profilePhotoDesktop.jpg"
+               srcset="img/feed/1/profilePhotoDesktop2x.jpg 2x" alt="Фото ленты 1">
+            <div class="userfeed__action">
+               <button class="userfeed__action__like">
+                  <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M30.5 0C25.5 0 22.9844 2.11674 20.5 4.90839C18.0156 2.11674 15.5 0 10.5 0C5.5 0 0.5 3.27482 0.5 13.0916C0.5 18 5.5 27.8168 20.5 36C35.5 27.8168 40.5 18 40.5 13.0916C40.5 3.27482 35.5 0 30.5 0Z"
+                        fill="url(#paint0_linear_2_1305)" />
+                     <defs>
+                        <linearGradient id="paint0_linear_2_1305" x1="20.4388" y1="7.39505e-09" x2="22.729" y2="35.8576"
+                           gradientUnits="userSpaceOnUse">
+                           <stop stop-color="#F22E3E" />
+                           <stop offset="1" stop-color="#B41212" />
+                        </linearGradient>
+                     </defs>
+                  </svg>
+               </button>
+               <button class="userfeed__action__share">
+                  <svg>
+                     <use xlink:href="img/sprite.svg#shareright"></use>
+                  </svg>
+               </button>
+            </div>
+
+            <div class="profile__desc_mob">
+
+               <div class="profile__desc__text">
+                  <p>
+                     Привет всем!
+                  </p>
+                  <p>
+                     Являясь всего лишь частью общей картины, действия представителей оппозиции лишь
+                     добавляют
+                     фракционных разногласий и объективно рассмотрены соответствующими инстанциями.
+                  </p>
+                  <p>
+                     Прежде всего, новая модель организационной деятельности представляет собой интересный
+                     эксперимент проверки модели развития.
+                  </p>
+                  <p>
+                     Современные технологии достигли такого уровня, что граница обучения кадров представляет
+                     собой интересный эксперимент проверки кластеризации усилий.
+                  </p>
+               </div>
+
+               <button class="profile__desc__min">
+                  <span>
+                     Свернуть
+                  </span>
+               </button>
+            </div>
+
+         </a>
+      </div>
+      <a href="" class="blurwindow__btn blurwindow__next">
+         <svg>
+            <use xlink:href="img/sprite.svg#arrow"></use>
+         </svg>
+      </a>
+   </div>
+
+
+</body>
+
+
+</html>
